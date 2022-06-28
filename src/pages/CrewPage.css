@@ -1,0 +1,143 @@
+.crew {
+   padding-bottom: 0;
+   padding-right: 0;
+}
+
+.crew .left-div {
+   display: flex;
+   flex-direction: column;
+   margin-top: auto;
+   padding-bottom: 6rem;
+}
+
+.crew-details {
+   padding-top: 9rem;
+   padding-bottom: 6rem;
+}
+
+.crew-details h2 {
+   font-family: var(--ff-serif);
+   font-size: 32px;
+   text-transform: uppercase;
+   color: hsl(var(--clr-white)/0.5);
+}
+
+.crew-details h1 {
+   font-family: var(--ff-serif);
+   font-size: 56px;
+   text-transform: uppercase;
+   padding-bottom: 10px;
+}
+
+.crew-details p {
+   max-width: 45ch;
+   font-size: 18px;
+   font-family: var(--ff-sans-normal);
+   color: hsl(var(--clr-light));
+
+}
+
+.crew-nav {
+   display: flex;
+   gap: 1.3rem;
+}
+
+.crew-nav button {
+   height: 15px;
+   aspect-ratio: 1;
+   border-radius: 50px;
+   background-color: hsl(var(--clr-white)/0.17);
+   border: none;
+}
+
+.crew-nav button:hover {
+   cursor: pointer;
+   background-color: hsl(var(--clr-white)/0.5);
+}
+
+.crew-nav button.active {
+   background-color: hsl(var(--clr-white));
+}
+
+.crew .right-div {
+   margin-top: auto;
+   padding-top: 3rem;
+}
+
+@media (max-width: 49em) {
+
+   .crew {
+      flex-direction: column;
+      padding-right: 2em;
+   }
+
+   .crew .left-div {
+      padding-bottom: 2rem;
+   }
+
+   .crew-details {
+      padding: 3rem 0 3rem;
+      text-align: center;
+   }
+
+   .crew-details h3 {
+      font-size: 24px;
+   }
+
+   .crew-details h1 {
+      font-size: 40px;
+   }
+
+   .crew-details p {
+      max-width: 50ch;
+      margin: auto;
+   }
+
+   .crew-nav {
+      margin: auto;
+   }
+
+   .crew .right-div {
+      margin: auto;
+   }
+
+   .crew .right-div img {
+      height: 450px;
+   }
+}
+
+@media (max-width: 35em) {
+
+   .crew .numbered-title {
+      display: none;
+   }
+
+   .crew .right-div {
+      width: 100%;
+      border-bottom: 1px solid hsl(var(--clr-white)/0.2);
+   }
+
+   .crew .right-div img {
+      height: 240px;
+      margin: auto;
+   }
+
+   .crew .left-div {
+      order: 1;
+      flex-direction: column-reverse;
+      padding-top: 2.5rem;
+   }
+
+   .crew-details h2 {
+      font-size: 1rem;
+   }
+
+   .crew-details h1 {
+      font-size: 24px;
+   }
+
+   .crew-details p {
+      font-size: 15px;
+   }
+
+}

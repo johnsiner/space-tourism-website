@@ -1,0 +1,138 @@
+.destination .left-div {
+   padding-top: 40px;
+   margin-top: auto;
+}
+
+.planet-container {
+   padding: 60px 20px 0 20px;
+}
+
+.planet-container img {
+   width: 445px;
+}
+
+.destination .right-div {
+   width: 445px;
+   margin-top: auto;
+}
+
+.destination-nav {
+   padding: 0;
+   display: flex;
+   list-style: none;
+   gap: 30px;
+}
+
+.destination-nav li {
+   color: hsl(var(--clr-light));
+   font-family: var(--ff-sans-cond);
+   font-size: 16px;
+   letter-spacing: 2.7px;
+   cursor: pointer;
+   padding: 8px 0;
+   border-bottom: .2rem solid hsl(var(--clr-white) / 0);
+   text-transform: uppercase;
+}
+
+.destination li:hover {
+   border-color: hsl(var(--clr-white) / .5);
+}
+
+.destination-nav li.active {
+   border-color: hsl(var(--clr-white));
+}
+
+.destination .right-div h1 {
+   font-size: 100px;
+   font-family: var(--ff-serif);
+   text-transform: uppercase;
+}
+
+.destination .right-div p {
+   font-size: 18px;
+   color: hsl(var(--clr-light)/0.8);
+   padding-bottom: 55px;
+}
+
+.stats {
+   border-top: 1px solid hsl(var(--clr-white)/0.2);
+   display: flex;
+   gap: 60px;
+   padding-top: 20px;
+}
+
+.destination .right-div .stats p {
+   font-size: 14px;
+   font-family: var(--ff-sans-cond);
+   padding: 0;
+}
+
+.stats h3 {
+   font-size: 28px;
+   font-family: var(--ff-serif);
+   text-transform: uppercase;
+}
+
+@media (max-width: 49em) {
+   .destination {
+      flex-direction: column;
+      /* padding: 0 4em; */
+   }
+
+   .destination .left-div {
+      padding-top: 0;
+      padding-bottom: 20px;
+   }
+
+   .planet-container {
+      padding: 60px 0 0;
+   }
+
+   .planet-container img {
+      width: 300px;
+      margin: auto;
+   }
+
+   .destination .right-div {
+      width: fit-content;
+      text-align: center;
+      max-width: 70ch;
+      margin: auto;
+   }
+
+   .destination-nav {
+      justify-content: center;
+   }
+
+   .destination .right-div h1 {
+      font-size: 80px;
+   }
+
+   .destination .right-div p {
+      font-size: 16px;
+      margin: auto;
+   }
+
+   .stats {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 35em) {
+   .planet-container img {
+      width: 170px;
+   }
+
+   .destination .right-div h1 {
+      font-size: 56px;
+   }
+
+   .destination .right-div p {
+      font-size: 15px;
+   }
+
+   .stats {
+      flex-direction: column;
+      gap: 30px;
+   }
+}
