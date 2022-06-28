@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
 import './HomePage.css';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+   const navigate = useNavigate();
+
    return (
       <Fragment>
          <Helmet>
@@ -20,7 +23,10 @@ export default function HomePage() {
                </p>
             </div>
             <div className="button-container">
-               <button href="#" className="large-button">
+               <button
+                  className="large-button"
+                  onClick={() => navigate('/destination')}
+               >
                   EXPLORE
                </button>
             </div>
